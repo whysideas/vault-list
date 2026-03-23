@@ -1,6 +1,6 @@
 # ZKP2P Vault List
 
-Curated metadata registry for ZKP2P vaults. Similar to [Uniswap Token Lists](https://tokenlists.org/), this repo provides off-chain metadata for ZKP2P rate manager vaults deployed on Base.
+Curated metadata registry for ZKP2P vaults. Similar to [Uniswap Token Lists](https://github.com/Uniswap/token-lists), this repo provides off-chain metadata for ZKP2P rate manager vaults deployed on Base.
 
 **Endpoint:** `https://raw.githubusercontent.com/zkp2p/vault-list/main/vault-list.json`
 
@@ -88,7 +88,7 @@ Runs automatically on PRs via GitHub Actions.
 
 ## Dynamic data
 
-The following data is **not** in this list and should be fetched at runtime from on-chain or the [ZKP2P indexer](https://github.com/zkp2p/zkp2p-indexer):
+The following data is **not** in this list and should be fetched at runtime from on-chain or the [ZKP2P indexer](https://indexer.zkp2p.xyz):
 
 - TVL (total deposits)
 - Volume
