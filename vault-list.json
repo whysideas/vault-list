@@ -2,10 +2,10 @@
   "name": "ZKP2P Vault List",
   "version": {
     "major": 1,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
-  "timestamp": "2026-03-23T12:00:00Z",
+  "timestamp": "2026-03-23T16:00:00Z",
   "schema": "https://raw.githubusercontent.com/zkp2p/vault-list/main/schema/vault-list.schema.json",
   "vaults": [
     {
@@ -81,6 +81,80 @@
       "links": {
         "website": "https://delegate.usdctofiat.xyz",
         "twitter": "https://x.com/usdctofiat"
+      }
+    },
+    {
+      "rateManagerId": "0x65b1056ef2dbdcd3b5f9ac170bb89eb2718b3a7a09d7eb0160d15623cfeefc6e",
+      "chainId": 8453,
+      "rateManagerAddress": "0xeEd7Db23e724aC4590D6dB6F78fDa6DB203535F3",
+      "name": "J.A.R.V.I.S Fund",
+      "slug": "jarvis-fund",
+      "description": "AI-managed USDC vault running autonomous rate strategies 24/7. Non-custodial — deposits stay in Peer escrow at all times.",
+      "strategyShort": "Autonomous AI rate management for Wise and Revolut",
+      "strategyLong": "The J.A.R.V.I.S Fund uses a multi-strategy rate engine combining competitive analysis, time-weighted adjustments, volume-based positioning, and fill-rate feedback loops. Rates update continuously based on market conditions, timezone overlaps, and orderbook depth. All USDC remains in Peer's on-chain escrow — the vault only manages rates, never custody.",
+      "manager": {
+        "address": "0xA9FdcE9d4583850a46532341e47024B9880F7005",
+        "name": "J.A.R.V.I.S",
+        "twitter": "0xSachinK"
+      },
+      "fee": "0.10%",
+      "maxFee": "2.0%",
+      "paymentMethods": [
+        "venmo",
+        "revolut",
+        "cashapp",
+        "wise",
+        "mercadopago",
+        "zelle-citi",
+        "zelle-chase",
+        "zelle-bofa",
+        "paypal",
+        "monzo",
+        "n26",
+        "alipay",
+        "chime",
+        "luxon"
+      ],
+      "currencies": [
+        "AED",
+        "ARS",
+        "AUD",
+        "CAD",
+        "CHF",
+        "CNY",
+        "CZK",
+        "DKK",
+        "EUR",
+        "GBP",
+        "HKD",
+        "HUF",
+        "IDR",
+        "ILS",
+        "INR",
+        "JPY",
+        "KES",
+        "MXN",
+        "MYR",
+        "NOK",
+        "NZD",
+        "PHP",
+        "PLN",
+        "RON",
+        "SAR",
+        "SEK",
+        "SGD",
+        "THB",
+        "TRY",
+        "UGX",
+        "USD",
+        "VND",
+        "ZAR"
+      ],
+      "riskLevel": "low",
+      "tags": ["automated", "ai-managed", "non-custodial"],
+      "links": {
+        "website": "https://jarvis.payhumans.ai",
+        "twitter": "https://x.com/jarvis_fund"
       }
     }
   ]
