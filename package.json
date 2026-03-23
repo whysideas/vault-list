@@ -1,0 +1,15 @@
+{
+  "name": "@zkp2p/vault-list",
+  "version": "1.0.0",
+  "description": "Curated metadata registry for ZKP2P vaults",
+  "scripts": {
+    "validate": "ts-node scripts/validate.ts"
+  },
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}

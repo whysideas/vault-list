@@ -1,0 +1,11 @@
+{
+  "name": "ZKP2P Vault List",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "timestamp": "2026-03-23T00:00:00Z",
+  "schema": "https://raw.githubusercontent.com/zkp2p/vault-list/main/schema/vault-list.schema.json",
+  "vaults": []
+}

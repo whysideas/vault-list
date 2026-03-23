@@ -1,0 +1,181 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZKP2P Vault List",
+  "description": "Schema for the ZKP2P vault metadata registry",
+  "type": "object",
+  "required": ["name", "version", "timestamp", "vaults"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the vault list",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "version": {
+      "$ref": "#/definitions/Version"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of the last update"
+    },
+    "schema": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the JSON schema"
+    },
+    "vaults": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/VaultInfo"
+      }
+    }
+  },
+  "definitions": {
+    "Version": {
+      "type": "object",
+      "required": ["major", "minor", "patch"],
+      "properties": {
+        "major": { "type": "integer", "minimum": 0 },
+        "minor": { "type": "integer", "minimum": 0 },
+        "patch": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "VaultInfo": {
+      "type": "object",
+      "required": [
+        "rateManagerId",
+        "chainId",
+        "rateManagerAddress",
+        "name",
+        "slug",
+        "description",
+        "strategyShort",
+        "manager",
+        "paymentMethods",
+        "currencies"
+      ],
+      "properties": {
+        "rateManagerId": {
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{64}$",
+          "description": "bytes32 rate manager ID from RateManagerV1"
+        },
+        "chainId": {
+          "type": "integer",
+          "description": "Chain ID where the rate manager is deployed (e.g. 8453 for Base)"
+        },
+        "rateManagerAddress": {
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "description": "Address of the RateManagerV1 contract"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "description": "Display name of the vault"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "minLength": 1,
+          "maxLength": 50,
+          "description": "URL-safe identifier"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Short description of the vault"
+        },
+        "strategyShort": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "One-line strategy summary"
+        },
+        "strategyLong": {
+          "type": "string",
+          "maxLength": 2000,
+          "description": "Detailed strategy description (markdown supported)"
+        },
+        "manager": {
+          "$ref": "#/definitions/ManagerInfo"
+        },
+        "fee": {
+          "type": "string",
+          "description": "Current fee as a human-readable string (e.g. '1.0%')"
+        },
+        "maxFee": {
+          "type": "string",
+          "description": "Maximum fee as a human-readable string (e.g. '5.0%')"
+        },
+        "paymentMethods": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Supported payment method identifiers"
+        },
+        "currencies": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "Supported fiat currency codes (ISO 4217)"
+        },
+        "riskLevel": {
+          "type": "string",
+          "enum": ["low", "medium", "high"],
+          "description": "Risk classification"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 30 },
+          "maxItems": 10,
+          "description": "Filterable tags"
+        },
+        "links": {
+          "$ref": "#/definitions/Links"
+        },
+        "logoURI": {
+          "type": "string",
+          "format": "uri",
+          "description": "256x256 vault logo"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ManagerInfo": {
+      "type": "object",
+      "required": ["address", "name"],
+      "properties": {
+        "address": {
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "description": "Manager wallet address"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "Manager display name"
+        },
+        "twitter": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "Twitter/X handle (without @)"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Links": {
+      "type": "object",
+      "properties": {
+        "website": { "type": "string", "format": "uri" },
+        "docs": { "type": "string", "format": "uri" },
+        "twitter": { "type": "string", "format": "uri" },
+        "discord": { "type": "string", "format": "uri" },
+        "telegram": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    }
+  }
+}
