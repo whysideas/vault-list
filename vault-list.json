@@ -2,10 +2,86 @@
   "name": "ZKP2P Vault List",
   "version": {
     "major": 1,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
-  "timestamp": "2026-03-23T00:00:00Z",
+  "timestamp": "2026-03-23T12:00:00Z",
   "schema": "https://raw.githubusercontent.com/zkp2p/vault-list/main/schema/vault-list.schema.json",
-  "vaults": []
+  "vaults": [
+    {
+      "rateManagerId": "0x8666d6fb0f6797c56e95339fd7ca82fdd348b9db200e10a4c4aa0a0b879fc41c",
+      "chainId": 8453,
+      "rateManagerAddress": "0xeed7db23e724ac4590d6db6f78fda6db203535f3",
+      "name": "Delegate by USDCtoFiat",
+      "slug": "delegate-by-usdctofiat",
+      "description": "Non-custodial USDC liquidity vault powered by USDCtoFiat. AI-powered rate management runs 24/7 with full platform and currency coverage, keeping depositors competitive without lifting a finger.",
+      "strategyShort": "Always-on AI rate optimization across all supported payment methods",
+      "strategyLong": "Fully automated rate management powered by AI analysis of orderbook depth, liquidity conditions, and market dynamics. Depositors delegate rate-setting to the vault while retaining full custody of their USDC. The engine updates rates continuously and adjusts positioning in response to changing market conditions, so depositors stay competitive around the clock.",
+      "manager": {
+        "address": "0xC141Cbe4f4a9CAbc3cc78159a9268a4e008922CD",
+        "name": "USDCtoFiat",
+        "twitter": "usdctofiat"
+      },
+      "fee": "0.10%",
+      "maxFee": "2.0%",
+      "paymentMethods": [
+        "revolut",
+        "wise",
+        "paypal",
+        "venmo",
+        "cashapp",
+        "zelle-chase",
+        "zelle-bofa",
+        "zelle-citi",
+        "mercadopago",
+        "monzo",
+        "n26",
+        "chime",
+        "luxon",
+        "alipay"
+      ],
+      "currencies": [
+        "AED",
+        "ARS",
+        "AUD",
+        "BRL",
+        "CAD",
+        "CHF",
+        "CNY",
+        "CZK",
+        "DKK",
+        "EUR",
+        "GBP",
+        "HKD",
+        "HUF",
+        "IDR",
+        "ILS",
+        "INR",
+        "JPY",
+        "KES",
+        "MXN",
+        "MYR",
+        "NOK",
+        "NZD",
+        "PHP",
+        "PLN",
+        "RON",
+        "SAR",
+        "SEK",
+        "SGD",
+        "THB",
+        "TRY",
+        "UGX",
+        "USD",
+        "VND",
+        "ZAR"
+      ],
+      "riskLevel": "low",
+      "tags": ["automated", "ai-managed", "non-custodial", "delegate"],
+      "links": {
+        "website": "https://delegate.usdctofiat.xyz",
+        "twitter": "https://x.com/usdctofiat"
+      }
+    }
+  ]
 }
