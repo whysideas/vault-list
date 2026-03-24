@@ -3,9 +3,9 @@
   "version": {
     "major": 1,
     "minor": 2,
-    "patch": 0
+    "patch": 1
   },
-  "timestamp": "2026-03-23T16:00:00Z",
+  "timestamp": "2026-03-24T12:00:00Z",
   "schema": "https://raw.githubusercontent.com/zkp2p/vault-list/main/schema/vault-list.schema.json",
   "vaults": [
     {
@@ -14,9 +14,9 @@
       "rateManagerAddress": "0xeed7db23e724ac4590d6db6f78fda6db203535f3",
       "name": "Delegate by USDCtoFiat",
       "slug": "delegate-by-usdctofiat",
-      "description": "Non-custodial USDC liquidity vault powered by USDCtoFiat. AI-powered rate management runs 24/7 with full platform and currency coverage, keeping depositors competitive without lifting a finger.",
-      "strategyShort": "Always-on AI rate optimization across all supported payment methods",
-      "strategyLong": "Fully automated rate management powered by AI analysis of orderbook depth, liquidity conditions, and market dynamics. Depositors delegate rate-setting to the vault while retaining full custody of their USDC. The engine updates rates continuously and adjusts positioning in response to changing market conditions, so depositors stay competitive around the clock.",
+      "description": "Fully automated USDC vault running 24/7 across 34 currencies and 14 payment methods. Rates adapt to real-time market conditions and stay competitive without any manual intervention. Non-custodial, 0.10% fee.",
+      "strategyShort": "AI-powered rate engine across 34 currencies and 14 payment methods",
+      "strategyLong": "Delegate handles rate management so depositors don't have to. Once you delegate, the bot monitors market conditions and adjusts your rates automatically.\n\nRates are recalculated continuously using live FX data and on-chain spread analysis. The bot targets optimal positioning — competitive enough to attract fills, wide enough to protect your margin. If market conditions shift or competitors adjust, your rates respond automatically.\n\nYour USDC never leaves your deposit. Delegation only grants rate-setting permission — withdrawals, currency changes, and deposit management stay fully in your control. The vault cannot move, spend, or access your funds.",
       "manager": {
         "address": "0xC141Cbe4f4a9CAbc3cc78159a9268a4e008922CD",
         "name": "USDCtoFiat",
@@ -80,8 +80,10 @@
       "tags": ["automated", "ai-managed", "non-custodial", "delegate"],
       "links": {
         "website": "https://delegate.usdctofiat.xyz",
+        "docs": "https://delegate.usdctofiat.xyz/#learn",
         "twitter": "https://x.com/usdctofiat"
-      }
+      },
+      "logoURI": "https://usdctofiat.xyz/brand-icon.png"
     },
     {
       "rateManagerId": "0x65b1056ef2dbdcd3b5f9ac170bb89eb2718b3a7a09d7eb0160d15623cfeefc6e",
