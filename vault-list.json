@@ -89,9 +89,9 @@
       "rateManagerAddress": "0xeEd7Db23e724aC4590D6dB6F78fDa6DB203535F3",
       "name": "J.A.R.V.I.S Fund",
       "slug": "jarvis-fund",
-      "description": "AI-managed USDC vault running autonomous rate strategies 24/7. Non-custodial — deposits stay in Peer escrow at all times.",
-      "strategyShort": "Autonomous AI rate management for Wise and Revolut",
-      "strategyLong": "The J.A.R.V.I.S Fund uses a multi-strategy rate engine combining competitive analysis, time-weighted adjustments, volume-based positioning, and fill-rate feedback loops. Rates update continuously based on market conditions, timezone overlaps, and orderbook depth. All USDC remains in Peer's on-chain escrow — the vault only manages rates, never custody.",
+      "description": "AI-managed USDC vault running autonomous rate strategies 24/7 across 14 payment platforms and 33 currencies. Non-custodial — deposits stay in Peer escrow at all times.",
+      "strategyShort": "Autonomous AI rate management across all supported payment platforms and currencies",
+      "strategyLong": "The J.A.R.V.I.S Fund uses a multi-strategy rate engine combining competitive analysis, time-weighted adjustments, volume-based positioning, and fill-rate feedback loops. Rates update continuously across 14 payment platforms and 33 currencies based on market conditions, timezone overlaps, and orderbook depth. All USDC remains in Peer on-chain escrow — the vault only manages rates, never custody.",
       "manager": {
         "address": "0xA9FdcE9d4583850a46532341e47024B9880F7005",
         "name": "J.A.R.V.I.S",
@@ -154,7 +154,7 @@
       "tags": ["automated", "ai-managed", "non-custodial"],
       "links": {
         "website": "https://jarvis.payhumans.ai",
-        "twitter": "https://x.com/jarvis_fund"
+        "twitter": "https://x.com/0xSachinK"
       }
     }
   ]
