@@ -2,10 +2,10 @@
   "name": "ZKP2P Vault List",
   "version": {
     "major": 1,
-    "minor": 3,
-    "patch": 1
+    "minor": 4,
+    "patch": 0
   },
-  "timestamp": "2026-03-26T12:52:00Z",
+  "timestamp": "2026-04-03T00:00:00Z",
   "schema": "https://raw.githubusercontent.com/zkp2p/vault-list/main/schema/vault-list.schema.json",
   "vaults": [
     {
@@ -232,6 +232,78 @@
       "links": {
         "docs": "https://peerlytics.xyz/explorer/address/0xe88a10f155fed40df3b778ed68b144ea5b255ca3",
         "twitter": "https://x.com/m38mah"
+      }
+    },
+    {
+      "rateManagerId": "0xd99ad8f04bc1118c176e77bfd8a53ac156edcabdff2cb329a209155c712800ec",
+      "chainId": 8453,
+      "rateManagerAddress": "0xeEd7Db23e724aC4590D6dB6F78fDa6DB203535F3",
+      "name": "Monoh Vault",
+      "slug": "monoh-vault",
+      "description": "MONOH USDC liquidity vault. Secure, no-KYC payment gateway with automated rate management across Peer-supported fiat rails and currencies. Rates are determined by a competitive AI engine using live FX data, spread controls, and floor-aware risk limits, updated continuously.",
+      "strategyShort": "Competitive AI-managed rate engine across 14 payment rails and 33 fiat currencies",
+      "strategyLong": "MONOH Vault uses a competitive rate engine that blends live FX pricing, competitor undercut logic, spread controls, and floor-aware risk limits. Rates update continuously across 14 payment platforms and 33 currencies based on market conditions, depositor floors, and liquidity positioning. All USDC remains in Peer on-chain escrow - the vault manages pricing only, never custody.",
+      "manager": {
+        "address": "0x405f40510A125F66Fae0C37FEd34c6266beE9913",
+        "name": "Monoh"
+      },
+      "fee": "0.095%",
+      "maxFee": "2.0%",
+      "paymentMethods": [
+        "revolut",
+        "wise",
+        "paypal",
+        "venmo",
+        "cashapp",
+        "zelle-chase",
+        "zelle-bofa",
+        "zelle-citi",
+        "mercadopago",
+        "monzo",
+        "n26",
+        "alipay",
+        "chime",
+        "luxon"
+      ],
+      "currencies": [
+        "AED",
+        "ARS",
+        "AUD",
+        "CAD",
+        "CHF",
+        "CNY",
+        "CZK",
+        "DKK",
+        "EUR",
+        "GBP",
+        "HKD",
+        "HUF",
+        "IDR",
+        "ILS",
+        "INR",
+        "JPY",
+        "KES",
+        "MXN",
+        "MYR",
+        "NOK",
+        "NZD",
+        "PHP",
+        "PLN",
+        "RON",
+        "SAR",
+        "SEK",
+        "SGD",
+        "THB",
+        "TRY",
+        "UGX",
+        "USD",
+        "VND",
+        "ZAR"
+      ],
+      "riskLevel": "low",
+      "tags": ["automated", "global", "multi-rail", "non-custodial", "ai-managed"],
+      "links": {
+        "website": "https://monohv2.vercel.app"
       }
     }
   ]
