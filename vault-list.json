@@ -2,10 +2,10 @@
   "name": "ZKP2P Vault List",
   "version": {
     "major": 1,
-    "minor": 4,
+    "minor": 5,
     "patch": 0
   },
-  "timestamp": "2026-04-03T00:00:00Z",
+  "timestamp": "2026-04-22T00:00:00Z",
   "schema": "https://raw.githubusercontent.com/zkp2p/vault-list/main/schema/vault-list.schema.json",
   "vaults": [
     {
@@ -305,6 +305,50 @@
       "links": {
         "website": "https://monohv2.vercel.app"
       }
+    },
+    {
+      "rateManagerId": "0xfd8fdd738b65b9063efc6d6e6c19825f28766165d01e88744dd76fedc7a31c9c",
+      "chainId": 8453,
+      "rateManagerAddress": "0xeEd7Db23e724aC4590D6dB6F78fDa6DB203535F3",
+      "name": "SWAP.MY",
+      "slug": "swap-my",
+      "description": "Non-custodial USDC vault for the SWAP.MY crypto exchange. Rate management across popular US, EU, UK, and LatAm payment platforms. 0.10% fee, deposits stay in Peer escrow at all times.",
+      "strategyShort": "Rate management across 10 payment platforms and 6 currencies",
+      "strategyLong": "SWAP.MY operates a rate-management vault that delegated depositors can opt into when selling USDC for fiat. Rates are sourced from live FX feeds with a configurable spread, and the vault publishes manager floors across every supported (platform, currency) pair.\n\nSupported platforms include Venmo, Cash App, Zelle, PayPal, Revolut, Wise, Monzo, Chime, N26, and Mercado Pago. Supported fiat currencies include USD, EUR, GBP, BRL, ARS, and MXN.\n\nYour USDC never leaves the Peer escrow. Delegation only grants rate-setting permission - withdrawals, currency changes, and deposit management stay fully under depositor control. The vault cannot move, spend, or access delegated funds.",
+      "manager": {
+        "address": "0x5871d5dE3624A53AF83609DdF1a9b3Db66b8C984",
+        "name": "SWAP.MY",
+        "twitter": "swapmyexchange"
+      },
+      "fee": "0.10%",
+      "maxFee": "5.0%",
+      "paymentMethods": [
+        "venmo",
+        "cashapp",
+        "zelle",
+        "paypal",
+        "revolut",
+        "wise",
+        "monzo",
+        "chime",
+        "n26",
+        "mercadopago"
+      ],
+      "currencies": [
+        "USD",
+        "EUR",
+        "GBP",
+        "BRL",
+        "ARS",
+        "MXN"
+      ],
+      "riskLevel": "low",
+      "tags": ["non-custodial", "swap-my"],
+      "links": {
+        "website": "https://swap.my",
+        "twitter": "https://x.com/swapmyexchange"
+      },
+      "logoURI": "https://swap.my/logo5.svg"
     }
   ]
 }
