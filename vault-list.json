@@ -2,10 +2,10 @@
   "name": "ZKP2P Vault List",
   "version": {
     "major": 1,
-    "minor": 5,
+    "minor": 6,
     "patch": 0
   },
-  "timestamp": "2026-04-22T00:00:00Z",
+  "timestamp": "2026-04-23T16:00:00Z",
   "schema": "https://raw.githubusercontent.com/zkp2p/vault-list/main/schema/vault-list.schema.json",
   "vaults": [
     {
@@ -77,7 +77,12 @@
         "ZAR"
       ],
       "riskLevel": "low",
-      "tags": ["automated", "ai-managed", "non-custodial", "delegate"],
+      "tags": [
+        "automated",
+        "ai-managed",
+        "non-custodial",
+        "delegate"
+      ],
       "links": {
         "website": "https://delegate.usdctofiat.xyz",
         "docs": "https://delegate.usdctofiat.xyz/#learn",
@@ -153,7 +158,11 @@
         "ZAR"
       ],
       "riskLevel": "low",
-      "tags": ["automated", "ai-managed", "non-custodial"],
+      "tags": [
+        "automated",
+        "ai-managed",
+        "non-custodial"
+      ],
       "links": {
         "website": "https://jarvis.payhumans.ai",
         "twitter": "https://x.com/0xSachinK"
@@ -228,7 +237,12 @@
         "ZAR"
       ],
       "riskLevel": "low",
-      "tags": ["automated", "long-term", "high-return", "non-custodial"],
+      "tags": [
+        "automated",
+        "long-term",
+        "high-return",
+        "non-custodial"
+      ],
       "links": {
         "docs": "https://peerlytics.xyz/explorer/address/0xe88a10f155fed40df3b778ed68b144ea5b255ca3",
         "twitter": "https://x.com/m38mah"
@@ -301,7 +315,13 @@
         "ZAR"
       ],
       "riskLevel": "low",
-      "tags": ["automated", "global", "multi-rail", "non-custodial", "ai-managed"],
+      "tags": [
+        "automated",
+        "global",
+        "multi-rail",
+        "non-custodial",
+        "ai-managed"
+      ],
       "links": {
         "website": "https://monohv2.vercel.app"
       }
@@ -343,12 +363,88 @@
         "MXN"
       ],
       "riskLevel": "low",
-      "tags": ["non-custodial", "swap-my"],
+      "tags": [
+        "non-custodial",
+        "swap-my"
+      ],
       "links": {
         "website": "https://swap.my",
         "twitter": "https://x.com/swapmyexchange"
       },
       "logoURI": "https://swap.my/logo5.svg"
+    },
+    {
+      "rateManagerId": "0x505f7fb49e4ea494e0d8795002554eec0db7309b3b5b3b42fd73f05fbae43d23",
+      "chainId": 8453,
+      "rateManagerAddress": "0xeEd7Db23e724aC4590D6dB6F78fDa6DB203535F3",
+      "name": "Whys Vault",
+      "slug": "whys-vault",
+      "description": "Competitive USDC vault with tight spreads (0.75%) and 45-second rate updates across USD, EUR, GBP, and AUD corridors. Built for volume on Venmo, CashApp, Zelle, Revolut, and Wise.",
+      "strategyShort": "Tight spreads, fast updates, competes on price",
+      "manager": {
+        "address": "0xf39203395cC5bA3E8f352fD4930dd2E450108087",
+        "name": "WhysIdeas",
+        "twitter": "ThinkWhysly"
+      },
+      "fee": "0.10%",
+      "maxFee": "0.50%",
+      "paymentMethods": [
+        "venmo",
+        "cashapp",
+        "zelle-chase",
+        "zelle-bofa",
+        "zelle-citi",
+        "revolut",
+        "wise"
+      ],
+      "currencies": [
+        "USD",
+        "EUR",
+        "GBP",
+        "AUD"
+      ],
+      "riskLevel": "low",
+      "tags": [
+        "automated",
+        "non-custodial"
+      ]
+    },
+    {
+      "rateManagerId": "0xb4c3a27f0c0fca1867ff6982015bd3b9ace7fb7a92580b991b505a9ade222647",
+      "chainId": 8453,
+      "rateManagerAddress": "0xeEd7Db23e724aC4590D6dB6F78fDa6DB203535F3",
+      "name": "ChooseWhysly",
+      "slug": "choosewhysly",
+      "description": "Patient capital USDC vault with wide spreads (3%) and 10-minute rate cycles. Optimized for yield per fill across USD, EUR, GBP, and AUD corridors.",
+      "strategyShort": "Wide spreads, fewer fills, maximizes per-fill yield",
+      "manager": {
+        "address": "0xf39203395cC5bA3E8f352fD4930dd2E450108087",
+        "name": "WhysIdeas",
+        "twitter": "ThinkWhysly"
+      },
+      "fee": "0.50%",
+      "maxFee": "5.0%",
+      "paymentMethods": [
+        "venmo",
+        "cashapp",
+        "zelle-chase",
+        "zelle-bofa",
+        "zelle-citi",
+        "revolut",
+        "wise"
+      ],
+      "currencies": [
+        "USD",
+        "EUR",
+        "GBP",
+        "AUD"
+      ],
+      "riskLevel": "low",
+      "tags": [
+        "automated",
+        "non-custodial",
+        "high-return"
+      ]
     }
   ]
 }
